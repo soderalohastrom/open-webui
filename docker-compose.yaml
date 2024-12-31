@@ -4,6 +4,7 @@ services:
   ollama:
     volumes:
       - ollama:/root/.ollama
+      - /Volumes/Paumalu/ollama/models:/root/.ollama/models
     container_name: ollama
     pull_policy: always
     tty: true
